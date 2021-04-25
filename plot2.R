@@ -30,5 +30,5 @@ data$Sub_metering_3 <- as.numeric(data$Sub_metering_3, na.rm = TRUE)
 plot(data$Date, data$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 ##Create the PNG file and then turn off the device
-dev.copy(png, file = "plot2.png")
+dev.copy(png, file = "plot2.png", width = 480, height = 480)
 dev.off()

@@ -27,7 +27,7 @@ data$Sub_metering_2 <- as.numeric(data$Sub_metering_2, na.rm = TRUE)
 data$Sub_metering_3 <- as.numeric(data$Sub_metering_3, na.rm = TRUE)
 
 #Set up #PNG file
-png(file = "plot3.png")
+png(file = "plot3.png", width = 480, height = 480)
 
 ##Make the plot
 plot(data$Date, data$Sub_metering_1, type = "n", xlab = "", ylab = "Energy Sub Metering")

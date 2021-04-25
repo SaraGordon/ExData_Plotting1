@@ -27,7 +27,7 @@ data$Sub_metering_2 <- as.numeric(data$Sub_metering_2, na.rm = TRUE)
 data$Sub_metering_3 <- as.numeric(data$Sub_metering_3, na.rm = TRUE)
 
 #Set up #PNG file
-png(file = "plot4.png")
+png(file = "plot4.png", width = 480, height = 480)
 
 ##Set up the plots to appear column-wise
 par(mfcol = c(2,2))

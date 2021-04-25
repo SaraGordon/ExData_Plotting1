@@ -30,5 +30,5 @@ data$Sub_metering_3 <- as.numeric(data$Sub_metering_3, na.rm = TRUE)
 hist(data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 ##Create the PNG file and then turn off the device
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "plot1.png", width = 480, height = 480)
 dev.off()
